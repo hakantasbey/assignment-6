@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    height: 8.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.logo img{
+    font-size: 16px;
+    height: 50px;
+    width: 50px;
+}
+
+
+.content a{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    margin: 1.5rem; 
+}
+
+.h1{
+    text-align: center;
+    height: 69px;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #8A1C4A;
+    margin-top: 3.2rem;
+}
+
+main{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3.2rem;
+    gap: 1rem;
+}
+
+main img{
+    height: 200px;
+    width: 240px;
+    border-radius: 10px;
+}
+
+footer{
+    height: 90px;
+    margin-top: 3.2rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 200px;
+    padding-left: 25px;
+    margin-right: 3rem;
+}
+
+.icon a{
+    margin: 1rem;
+    font-size: 30px;
+    color: black;
+}
+
+
+.logo img:hover{
+    animation: cw-logo1 1.5s ease-in-out 1 forwards alternate;
+}
+
+.logo img:hover::after{
+    animation: cw-logo2 1s ease-in-out 1 forwards reverse;
+}
+
+.content a:hover{
+    border-bottom: 1px solid #8A1C4A;
+    animation: line 5s alternate;
+}
+
+
+
+
+
+
+@keyframes cw-logo1{
+    0%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        height: 80px;
+        width: 80px;
+    }
+   
+}
+
+@keyframes cw-logo2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        height: 50px;
+        width: 50px;
+    }
+   
+}
+
+@keyframes line {
+    0%{
+        transform-origin: left;
+        transform: scaleX(0);
+    }
+    25%{
+        transform: scaleX(1);
+    }
+
+    100%{
+
+    }
+}
+
