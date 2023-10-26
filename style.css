@@ -95,7 +95,7 @@ footer{
 
 .content a:hover{
     border-bottom: 1px solid #8A1C4A;
-    animation: line 5s alternate;
+    animation: line 1s alternate;
 }
 
 
@@ -126,16 +126,12 @@ footer{
 }
 
 @keyframes line {
-    0%{
-        transform-origin: left;
-        transform: scaleX(0);
+    from {
+        width: 0%;
+      }
+    
+      to {
+        width: 100%;
+      }
     }
-    25%{
-        transform: scaleX(1);
-    }
-
-    100%{
-
-    }
-}
 
