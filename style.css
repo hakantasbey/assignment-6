@@ -90,13 +90,13 @@ footer{
 }
 
 .logo img:hover::after{
-    animation: cw-logo2 1s ease-in-out 1 forwards reverse;
+    animation: cw-logo2 1s ease-in-out 1 forwards alternate-reverse;
 }
 
 .content a:hover{
     border-bottom: 1px solid #8A1C4A;
     animation: line 1s alternate;
-}
+
 
 
 
